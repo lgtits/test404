@@ -1,1 +1,0 @@
-import{_ as a,e as n,o,c as s,a as t}from"./index.ff6d72df.js";const r=n({name:"IndexPage"}),c={class:"flex flex-center"};function d(f,e,l,p,_,i){return o(),s("div",c,e[0]||(e[0]=[t("h1",null,"Faq",-1)]))}var x=a(r,[["render",d]]);export{x as default};
