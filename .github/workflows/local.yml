@@ -23,7 +23,7 @@ jobs:
       id: push_directory
       uses: cpina/github-action-push-to-another-repository@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.deployGithubPage  }}
+        API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN  }}
       with:
         source-directory: dist
         destination-github-username: 'lgtits'
