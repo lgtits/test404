@@ -25,7 +25,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN  }}
       with:
-        source-directory: dist
+        source-directory: dist/spa
         destination-github-username: 'lgtits'
         destination-repository-name: 'test404'
         user-email: a0937370704@gmail.com
