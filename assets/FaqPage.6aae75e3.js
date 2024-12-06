@@ -1,1 +1,0 @@
-import{f as o,o as s,c,a as n}from"./index.7fd66a9d.js";const r={class:"flex flex-center"},i={__name:"FaqPage",setup(l){return o(async()=>{async function t(){let a=await(await fetch("https://www.cloudflare.com/cdn-cgi/trace",{mode:"cors"})).text();console.log(a)}await t()}),(t,e)=>(s(),c("div",r,e[0]||(e[0]=[n("h1",null,"Faq",-1)])))}};export{i as default};
