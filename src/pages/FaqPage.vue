@@ -8,13 +8,17 @@
 import { ref, computed, onMounted } from "vue";
 
 onMounted(async () => {
-  async function test() {
-    let response = await fetch("https://www.cloudflare.com/cdn-cgi/trace", {
-      mode: "cors",
-    });
-    let text = await response.text();
-    console.log(text);
+  async function getCloudflareJSON() {
+    let data = await fetch("https://one.one.one.one/cdn-cgi/trace").then(
+      (res) => res.text()
+    );
+    let arr = data
+      .trim()
+      .split("\n")
+      .map((e) => e.split("="));
+    return Object.fromEntries(arr);
   }
-  await test();
+
+  await getCloudflareJSON().then(console.log);
 });
 </script>
